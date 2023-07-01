@@ -39,8 +39,11 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
   }
+  
+ 
+  
   
   button#voiceButton:hover {
     background-color: #FF00FF;
@@ -153,3 +156,61 @@ body {
   video::-webkit-media-controls-fullscreen-button {
     display: none;
   }
+  .background-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(135deg, #9900FF, #CC00FF, #00FFCC);
+    background-size: 400% 400%;
+  }
+  
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+      opacity: 1;
+    }
+    50% {
+      background-position: 100% 50%;
+      opacity: 0.5;
+    }
+    100% {
+      background-position: 0% 50%;
+      opacity: 1;
+    }
+  }
+  
+  
+  
+#voiceInput {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: #FFFFFF;
+  }
+
+#voicePreview {
+    text-transform: uppercase;
+    animation: typing 1s steps(40), blink-caret 0.75s step-end infinite;
+    
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-right-color: transparent;
+    }
+    50% {
+      border-right-color: white;
+    }
+  }
+  

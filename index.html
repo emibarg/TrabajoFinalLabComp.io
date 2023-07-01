@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voxmo</title>
-    <link href="styles.css" rel="stylesheet">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voxmo</title>
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="title">Voxmo</h1>
-    <button id="voiceButton" onclick="handleVoiceRecording()">🎙️</button>
-    <div class="instructions">
-        <div class="instructions-content">
-            <p>Instrucciones:</p>
-            <p>•Diga Universidad Católica de Córdoba.<br>
-                •Diga Video.<br>
-                •Diga Galeria. 
-            </p>
-        </div>
+  <div class="background-effect"></div>
+  <h1 class="title">Voxmo</h1>
+  <button id="voiceButton" onclick="handleVoiceRecording()">🎙️</button>
+  <div id="voicePreview" class="title"></div>
+  <div class="instructions">
+    <div class="instructions-content">
+      <p>Instrucciones:</p>
+      <p>•Diga Universidad Católica de Córdoba.<br>
+        •Diga Video.<br>
+        •Diga Galeria.<br>
+        •Diga Más informacion.<br>
+        •Diga Sugerencias.
+      </p>
     </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
