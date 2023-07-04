@@ -163,8 +163,9 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(135deg, #9900FF, #CC00FF, #00FFCC);
+    background: linear-gradient(135deg, #9900FF, #CC00FF, #00FFCC,#FF355E );
     background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease-in-out infinite;
   }
   
   
@@ -213,4 +214,67 @@ body {
       border-right-color: white;
     }
   }
+  .about {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
   
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+  .suggestions-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .suggestions-form label,
+  .suggestions-form input,
+  .suggestions-form textarea,
+  .suggestions-form select {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .suggestions-form textarea,
+  .suggestions-form select {
+    width: 300px;
+  }
+  
+  .suggestions-form button[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #00FFCC;
+    color: #9900FF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .suggestions-form button[type="submit"]:hover {
+    background-color: #FF00FF;
+    color: #FFFFFF;
+  }
+  .formu {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }

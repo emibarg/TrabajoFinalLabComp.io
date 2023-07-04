@@ -10,6 +10,33 @@
 <header><button id="goBack" onclick="window.location.href='index.html'">⬅️</button></header>
 <body>
     <div class="background-effect"></div>
+    <div class="formu">
+        <input type="radio" id="tab-suggestions" name="tabs" class="tab-input">
+        <label for="tab-suggestions" class="tab-label">Me gustó la pagina!</label>
+        <div class="tab-content">
+            <form id="suggestionsForm" class="suggestions-form">
+                <label for="Sugerencia">Sugerencia:</label>
+                <textarea id="Sugerencia" name="Sugerencia" required></textarea>
+
+                <label for="Categoria">Categoria:</label>
+                <select id="Categoria" name="Categoria" required>
+                    <option value="">Categoria</option>
+                    <option value="Diseño">Diseño</option>
+                    <option value="Funcionalidad">Funcionalidad</option>
+                    <option value="UX">UX</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los terminos y condiciones.
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
     
 </body>
 </html>
