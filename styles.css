@@ -78,8 +78,8 @@ body {
     text-align: center;
   }
   .gallery-container {
-    width: 500px; /* Adjust as needed */
-    height: 300px; /* Adjust as needed */
+    width: 500px; 
+    height: 300px; 
     overflow: hidden;
     position: relative;
   }
@@ -110,7 +110,7 @@ body {
     }
   }
   .video-container {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin: 0 auto;
   }
   
@@ -120,7 +120,7 @@ body {
     outline: none;
   }
   
-  /* Custom styling for the video controls */
+
   video::-webkit-media-controls {
     display: flex;
     background-color: rgba(0, 0, 0, 0.7);
